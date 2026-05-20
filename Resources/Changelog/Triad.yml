@@ -758,3 +758,10 @@ Entries:
   id: 2212
   time: '2026-05-20T01:40:09.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/99
+- author: Wuffindy
+  changes:
+    - type: Tweak
+      message: Increased the hour requirement for Overseer & STC
+  id: 2213
+  time: '2026-05-20T14:43:18.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/69
