@@ -899,3 +899,10 @@ Entries:
   id: 2226
   time: '2026-05-26T04:19:04.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/124
+- author: SislenC
+  changes:
+    - type: Tweak
+      message: Bomb suit, bomb helmet, and rad suit save on ship save.
+  id: 2227
+  time: '2026-05-26T04:19:31.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/126
