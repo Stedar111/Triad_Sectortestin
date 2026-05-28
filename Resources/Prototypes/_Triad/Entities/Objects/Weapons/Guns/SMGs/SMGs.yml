@@ -29,11 +29,11 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/SMGs/ak220.rsi
   - type: Gun
-    minAngle: 27
-    maxAngle: 45
+    minAngle: 25
+    maxAngle: 36
     fireRate: 7.5
-    angleIncrease: 19
-    angleDecay: 10
+    angleIncrease: 3
+    angleDecay: 16
     selectedMode: FullAuto
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/smg.ogg
