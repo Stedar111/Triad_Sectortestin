@@ -4,30 +4,24 @@
   id: WeaponSubMachineGunSquire
   description: A somewhat novel SMG design featuring a rare folding stock for stowage, near uncontrollable with its stock folded.  Designed by HZD to fit the niche weapon requirements of combatants with strict storage capacity.
   components:
-  - type: GunToggleableBonus
-    minAngle: 10
-    maxAngle: 20
-    bonusFireRate: 0
-    requiresToggle: false
-  - type: ItemToggleSize
-    activatedSize: Small
-    activatedShape:
-    - 0,0,1,1
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/SMGs/ak220.rsi
+    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire.rsi
     layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: GunWieldBonus
-    minAngle: -15
-    maxAngle: -25
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      - state: stock
+        map: ["enum.ToggleableVisuals.Layer"]
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire_inhands_32x.rsi
+    size: Normal
+    shape:
+    - 0,0,2,1
   - type: Clothing
-    sprite: _Mono/Objects/Weapons/Guns/SMGs/ak220.rsi
+    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire_inhands_32x.rsi
+  - type: StaticPrice
+    price: 2400
   - type: Gun
     minAngle: 25
     maxAngle: 36
@@ -40,6 +34,27 @@
     availableModes:
     - SemiAuto
     - FullAuto
+  - type: ItemToggle
+    activated: false
+    onUse: false
+    onActivate: false
+    onAltUse: true
+    altPriority: 1
+    verbToggleOff: unfold-verb
+    verbToggleOn: fold-verb
+    soundActivate:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+      params:
+        variation: 0.2
+    soundDeactivate:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+      params:
+        variation: 0.2
+  - type: GunToggleableBonus
+    minAngle: 25 # These make it worse since activated true is folded
+    maxAngle: 25
+    bonusFireRate: -2
+    requiresToggle: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -50,18 +65,31 @@
         priority: 2
         whitelist:
           tags:
-          - Magazine9x19mmSubMachineGunFMJ
-    gun_chamber:
-      name: Chamber
-      startingItem: Cartridge9x19mmFMJ
-      priority: 1
-      whitelist:
-       tags:
-       - Cartridge9x19mmFMJ
+            - Magazine9x19mmSubMachineGunFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge9x19mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmFMJ
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
-  - type: StaticPrice
-    price: 500
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+            True: { state: stock-folded }
+            False: { state: stock }
+  - type: ItemToggleSize
+    activatedSize: Large
+    activatedShape: 
+    - 0,0,3,1
