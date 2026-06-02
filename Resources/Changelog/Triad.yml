@@ -1147,3 +1147,12 @@ Entries:
   id: 2255
   time: '2026-06-02T07:56:54.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/121
+- author: SquishyEmmaaaa
+  changes:
+    - type: Add
+      message: >-
+        Introduces three new markdown options for your paperwork! [check],
+        [form], and [signature].
+  id: 2256
+  time: '2026-06-02T08:00:25.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/173
