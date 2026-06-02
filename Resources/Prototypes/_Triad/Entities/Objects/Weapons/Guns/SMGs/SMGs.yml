@@ -17,7 +17,7 @@
     sprite: _Triad/Objects/Weapons/Guns/smgs/squire_inhands_32x.rsi
     size: Normal
     shape:
-    - 0,0,2,1
+    - 0,0,1,1
   - type: Clothing
     sprite: _Triad/Objects/Weapons/Guns/smgs/squire_inhands_32x.rsi
   - type: StaticPrice
@@ -87,8 +87,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-            True: { state: stock-folded }
-            False: { state: stock }
+            True: { state: stock }
+            False: { state: stock-folded }
   - type: ItemToggleSize
     activatedSize: Large
     activatedShape: 
