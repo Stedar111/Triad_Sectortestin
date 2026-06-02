@@ -5,7 +5,7 @@
   description: A somewhat novel SMG design featuring a rare folding stock for stowage, near uncontrollable with its stock folded.  Designed by HZD to fit the niche weapon requirements of combatants with strict storage capacity.
   components:
   - type: Sprite
-    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire.rsi
+    sprite: _Triad/Objects/Weapons/Guns/smgs/squire.rsi
     layers:
       - state: stock
         map: ["enum.ToggleableVisuals.Layer"]
@@ -14,14 +14,14 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Item
-    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire_inhands_32x.rsi
+    sprite: _Triad/Objects/Weapons/Guns/smgs/squire_inhands_32x.rsi
     size: Normal
     shape:
     - 0,0,2,1
   - type: Clothing
-    sprite: _Triad/Objects/Weapons/Guns/SMGs/squire_inhands_32x.rsi
+    sprite: _Triad/Objects/Weapons/Guns/smgs/squire_inhands_32x.rsi
   - type: StaticPrice
-    price: 2400
+    price: 500
   - type: Gun
     minAngle: 25
     maxAngle: 36

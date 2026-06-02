@@ -1,11 +1,11 @@
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseSquire
+  id: WeaponCaseSquireRegistered
   suffix: Loadout, Squire
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunSquire
+    - id: WeaponSubMachineGunSquireRegistered
       amount: 1
     - id: Magazine9x19mmSubMachineGunFMJ
       amount: 4
