@@ -1178,3 +1178,22 @@ Entries:
   id: 2258
   time: '2026-06-03T02:30:32.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/174
+- author: Virnazush
+  changes:
+    - type: Tweak
+      message: Towels can now be saved to ships.
+    - type: Tweak
+      message: >-
+        Rolling Pins can now be saved to ships, probably was missed in the
+        previous kitchen item saving PR. 
+    - type: Tweak
+      message: >-
+        Toys such as Newton Cradles, Miniatures Toy Nukes, Toy Singulo, and Toy
+        Tesla can be saved to ships.
+    - type: Tweak
+      message: 'Handheld Instruments, can now be saved to ships.  '
+    - type: Tweak
+      message: 'Handheld flags can now be saved to ships. '
+  id: 2259
+  time: '2026-06-03T02:38:52.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/140
