@@ -4,6 +4,26 @@
   id: WeaponSubMachineGunSquire
   description: A somewhat novel SMG design featuring a rare folding stock for stowage, near uncontrollable with its stock folded.  Designed by HZD to fit the niche weapon requirements of combatants with strict storage capacity.
   components:
+  - type: GunToggleableBonus
+    minAngle: 10
+    maxAngle: 20
+    bonusFireRate: 0
+    requiresToggle: false
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -25
+  - type: Gun
+    minAngle: 25
+    maxAngle: 36
+    fireRate: 7.5
+    angleIncrease: 3
+    angleDecay: 16
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/smg.ogg
+    availableModes:
+    - SemiAuto
+    - FullAuto
   - type: Sprite
     sprite: _Triad/Objects/Weapons/Guns/SMGs/squire.rsi
     layers:
@@ -18,22 +38,12 @@
     size: Normal
     shape:
     - 0,0,1,1
+  - type: ItemToggleSize
+    activatedSize: Large
+    activatedShape: 
+    - 0,0,3,1
   - type: Clothing
     sprite: _Triad/Objects/Weapons/Guns/SMGs/squire_inhands_32x.rsi
-  - type: StaticPrice
-    price: 500
-  - type: Gun
-    minAngle: 40
-    maxAngle: 54
-    fireRate: 7.5
-    angleIncrease: 3
-    angleDecay: 16
-    selectedMode: FullAuto
-    soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/smg.ogg
-    availableModes:
-    - SemiAuto
-    - FullAuto
   - type: ItemToggle
     activated: false
     onUse: false
@@ -50,11 +60,6 @@
       path: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
       params:
         variation: 0.2
-  - type: GunToggleableBonus
-    minAngle: -15
-    maxAngle: -12
-    bonusFireRate: 1
-    requiresToggle: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -89,7 +94,5 @@
         enum.ToggleableVisuals.Layer:
             True: { state: stock }
             False: { state: stock-folded }
-  - type: ItemToggleSize
-    activatedSize: Large
-    activatedShape: 
-    - 0,0,3,1
+  - type: StaticPrice
+    price: 500
