@@ -1156,3 +1156,44 @@ Entries:
   id: 2256
   time: '2026-06-02T08:00:25.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/173
+- author: Wuffindy
+  changes:
+    - type: Tweak
+      message: changed ruin tanker shield to MS-100
+  id: 2257
+  time: '2026-06-03T00:14:01.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/180
+- author: Frontier
+  changes:
+    - type: Add
+      message: >-
+        Portable pumps have been ported from Frontier. These can be anchored and
+        powered (with nearby LV or a cell) to clean up spills. They have an
+        internal buffer that destroys excess liquids. You can find their boards
+        under the Advanced Cleaning research.
+    - type: Add
+      message: >-
+        Floodlights and desk lamps can now be anchored to use APC power (instead
+        of battery power) like other anchored machines.
+  id: 2258
+  time: '2026-06-03T02:30:32.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/174
+- author: Virnazush
+  changes:
+    - type: Tweak
+      message: Towels can now be saved to ships.
+    - type: Tweak
+      message: >-
+        Rolling Pins can now be saved to ships, probably was missed in the
+        previous kitchen item saving PR. 
+    - type: Tweak
+      message: >-
+        Toys such as Newton Cradles, Miniatures Toy Nukes, Toy Singulo, and Toy
+        Tesla can be saved to ships.
+    - type: Tweak
+      message: 'Handheld Instruments, can now be saved to ships.  '
+    - type: Tweak
+      message: 'Handheld flags can now be saved to ships. '
+  id: 2259
+  time: '2026-06-03T02:38:52.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/140
