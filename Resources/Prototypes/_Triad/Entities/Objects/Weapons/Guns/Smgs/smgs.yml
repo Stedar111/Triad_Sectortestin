@@ -2,7 +2,7 @@
   name: HZD Squire (9x19mm)
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseGunToggleable]
   id: WeaponSubMachineGunSquire
-  description: A somewhat novel SMG design featuring a rare folding stock for stowage, near uncontrollable with its stock folded.  Designed by HZD to fit the niche weapon requirements of combatants with strict storage capacity.
+  description: A somewhat novel SMG design featuring a rare folding stock for stowage, near uncontrollable with its stock folded. Designed by HZD to fit the niche weapon requirements of combatants with strict storage capacity.
   components:
   - type: GunToggleableBonus
     minAngle: -5
