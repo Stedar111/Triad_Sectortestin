@@ -62,30 +62,28 @@
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
+  id: GasMiningDrillMachineCircuitboard
+  result: GasMiningDrillMachineCircuitboard
+  materials:
+    Steel: 800
+    Glass: 900
+    Gold: 100
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: GaslockFrameMachineCircuitboard
+  result: GaslockFrameMachineCircuitboard
+  materials:
+    Steel: 800
+    Glass: 900
+  
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: PortablePumpMachineCircuitBoard
   result: PortablePumpMachineCircuitBoard
   materials:
     Steel: 100
     Glass: 500
-
-# Triad removals - We don't have these yet. There's a PR open for these.
-#- type: latheRecipe
-#  parent: BaseCircuitboardRecipe
-#  id: GasMiningDrillMachineCircuitboard
-#  result: GasMiningDrillMachineCircuitboard
-#  materials:
-#    Steel: 800
-#    Glass: 900
-#    Gold: 100
-
-#- type: latheRecipe
-#  parent: BaseCircuitboardRecipe
-#  id: GaslockFrameMachineCircuitboard
-#  result: GaslockFrameMachineCircuitboard
-#  materials:
-#    Steel: 800
-#    Glass: 900
-# End Triad
 
 # Thrusters
 - type: latheRecipe
