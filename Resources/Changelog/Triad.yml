@@ -2187,3 +2187,85 @@ Entries:
   id: 2357
   time: '2026-07-08T01:38:55.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/293
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: >-
+        Added the Triad Defense force; local security militia! They will be
+        enforcing the laws around the sector.
+    - type: Tweak
+      message: >-
+        Renamed the Judge role to Station Guard, being a dedicated Venmar
+        Station guard, bringing any criminals to the TDF base, but they do not
+        have jurisdiction over arresting criminals outside of MD/Central station
+        space
+    - type: Tweak
+      message: >-
+        The Overseer has had a change of duties. They will now ensure Colonial
+        personnel do their duties, do bookkeeping, and use the ID card console
+        on anyone that needs an access change.
+    - type: Tweak
+      message: Added ranks for DoC, Overseer, and Emergency responders.
+    - type: Tweak
+      message: Station guards now have playtime ranks.
+    - type: Tweak
+      message: >-
+        The Overseer now spawns with a multiphase energy gun instead of the
+        lawbringer. Station guards now get a disabler instead of the lawbringer.
+    - type: Add
+      message: Added Adjudant corvette ship to TDF shipyard, made by Deox
+    - type: Add
+      message: Added Grunder destroyer ship to TDF shipyard, made by Clift
+    - type: Remove
+      message: Disabled Camelot pending major USSP rework.
+  id: 2358
+  time: '2026-07-08T12:29:22.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/107
+- author: Upstream
+  changes:
+    - type: Add
+      message: >-
+        Additional spray painter features have been ported from Wizard's Den. A
+        Palette button, rotation buttons, and a color picker.
+  id: 2359
+  time: '2026-07-08T13:53:31.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/292
+- author: HTMLSystem
+  changes:
+    - type: Tweak
+      message: >-
+        Change up arachnid's layering. Big glasses and over-ear headsets should
+        look better on them now!
+  id: 2360
+  time: '2026-07-08T13:56:26.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/289
+- author: DDrakov
+  changes:
+    - type: Add
+      message: Added new station, Venmar Station
+    - type: Remove
+      message: Removed old CC
+  id: 2361
+  time: '2026-07-08T14:33:36.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/250
+- author: TheRealMasterChief117
+  changes:
+    - type: Fix
+      message: Fixed Venmar station asteroid walls being destroyable via pickaxe
+  id: 2362
+  time: '2026-07-08T16:43:49.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/298
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added .45 ACP magazine boxes to the TDF uplink
+  id: 2363
+  time: '2026-07-08T17:15:04.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/299
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added .45 ACP SMG mags to TDF uplink
+  id: 2364
+  time: '2026-07-08T18:29:09.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/300
