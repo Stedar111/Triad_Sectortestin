@@ -128,14 +128,14 @@
   - type: Item
     size: Huge
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Rifles/prometheus.rsi
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/pike.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Mono/Objects/Weapons/Guns/Rifles/prometheus.rsi
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/pike_inhands_32x.rsi
   - type: GunRequiresWield
   - type: ChamberMagazineAmmoProvider
     soundRack:
