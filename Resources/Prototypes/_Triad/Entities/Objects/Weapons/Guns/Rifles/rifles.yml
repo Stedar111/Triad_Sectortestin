@@ -127,6 +127,7 @@
   components:
   - type: Item
     size: Huge
+    sprite: _Triad/Objects/Weapons/Guns/Rifles/pike_inhands_32x.rsi
   - type: Sprite
     sprite: _Triad/Objects/Weapons/Guns/Rifles/pike.rsi
     layers:
