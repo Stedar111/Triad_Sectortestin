@@ -32,6 +32,8 @@
 # Clothing
 - type: Tag
   id: AdvancedTacticalBackpack
+- type: Tag
+  id: HZDmodsuitcore
 
 # Docking. Shuttle-side tags: a berth that sets PriorityDock.requiredShuttleTag to one of these only
 # forms docking configs against shuttle ports carrying that tag, which is how a tight berth states
