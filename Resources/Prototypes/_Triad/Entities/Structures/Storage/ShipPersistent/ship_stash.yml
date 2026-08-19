@@ -107,7 +107,7 @@
       count: 1
       whitelist:
         tags:
-        - HZDmodsuitcore
+        - HZDModsuitCore
 
 - type: entity
   parent: BasePersistentShipStorageStash
