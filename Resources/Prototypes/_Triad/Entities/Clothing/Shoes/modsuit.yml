@@ -42,7 +42,7 @@
       shoes-vox:
       - state: equipped-FEET-sealed-vox
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.35
+    modifier: 0.5
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHeavySuit
