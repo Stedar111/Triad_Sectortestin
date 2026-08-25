@@ -1,6 +1,6 @@
 - type: technology
   id: HardsuitsArmoredSpecialized
-  name: specialized-armored-hardsuits
+  name: research-technology-specialized-armored-hardsuits
   entityIcon: ClothingModsuitHZDBesieger
   discipline: Arsenal
   tier: 3
