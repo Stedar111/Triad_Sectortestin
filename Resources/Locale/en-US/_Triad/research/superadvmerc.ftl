@@ -1,1 +1,1 @@
-specialized-armored-hardsuits = Specialized Armored Hardsuits
+research-technology-specialized-armored-hardsuits = Specialized Armored Hardsuits
