@@ -23,3 +23,17 @@
   - type: Tag
     tags:
     - HZDModsuitCore
+
+- type: entity
+  parent: ClothingModsuitHZDBesieger
+  id: ClothingModsuitHZDBesiegerPowerCell
+  suffix: High-Capacity Battery
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+        whitelist:
+          components:
+            - PowerCell
