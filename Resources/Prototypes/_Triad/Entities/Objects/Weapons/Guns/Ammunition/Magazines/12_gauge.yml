@@ -1,6 +1,6 @@
 - type: entity
-  id: BaseMagazine12_gauge
-  name: ammo drum (12 gauge shells)
+  id: BaseShortMagazine12_gauge
+  name: box magazine (12 gauge shells)
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -11,8 +11,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - ShellShotgun12_gaugeBuckshot
-    capacity: 12 #Triad 8 > 12
+      - ShellShotgun12_gaugeBuckshot
+    capacity: 8
     soundRack:
       path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
   - type: Item
@@ -21,45 +21,45 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi
+    sprite: _Triad/Objects/Weapons/Guns/Ammunition/Magazines/12_gauge/12_gauge_boxmag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 6
     zeroVisible: false
   - type: Appearance
 
 - type: entity
-  id: Magazine12_gaugeEmpty
-  name: ammo drum (12 gauge shells any)
+  id: ShortMagazine12_gaugeEmpty
+  name: box magazine (12 gauge shells any)
   suffix: empty
-  parent: BaseMagazine12_gauge
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 - type: entity
-  id: Magazine12_gaugeBuckshot
-  name: ammo drum (12 gauge buckshot)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeBuckshot
+  name: box magazine (12 gauge buckshot)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBuckshot
   - type: Sprite
     layers:
-    - state: pellets
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugeBeanbag
-  name: ammo drum (12 gauge beanbags)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeBeanbag
+  name: box magazine (12 gauge beanbags)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
@@ -67,13 +67,13 @@
     layers:
     - state: beanbag
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugeSlug
-  name: ammo drum (12 gauge slug)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeSlug
+  name: box magazine (12 gauge slug)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeSlug
@@ -81,13 +81,13 @@
     layers:
     - state: slug
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugeIncendiary
-  name: ammo drum (12 gauge incendiary)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeIncendiary
+  name: box magazine (12 gauge incendiary)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeIncendiary
@@ -95,13 +95,13 @@
     layers:
     - state: incendiary
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugeUranium
-  name: ammo drum (12 gauge uranium)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeUranium
+  name: box magazine (12 gauge uranium)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeUranium
@@ -109,13 +109,13 @@
     layers:
     - state: uranium
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugePractice
-  name: ammo drum (12 gauge practice)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugePractice
+  name: box magazine (12 gauge practice)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugePractice
@@ -123,58 +123,13 @@
     layers:
     - state: practice
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-#Mono AP system
-#anti-flesh ammo
-- type: entity
-  id: Magazine12_gaugeOOBuckshot
-  name: ammo drum (12 gauge OO magnum buckshot)
-  parent: BaseMagazine12_gauge
-  components:
-  - type: BallisticAmmoProvider
-    proto: ShellShotgun12_gaugeOOBuckshot
-  - type: Sprite
-    layers:
-    - state: pellets
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: Magazine12_gaugeSlugRIP
-  name: ammo drum (12 gauge RIP)
-  parent: BaseMagazine12_gauge
-  components:
-  - type: BallisticAmmoProvider
-    proto: ShellShotgun12_gaugeSlugRIP
-  - type: Sprite
-    layers:
-    - state: RIP
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-#armor-piercing ammo
-- type: entity
-  id: Magazine12_gaugeSlugAP
-  name: ammo drum (12 gauge armor-piercing slug)
-  parent: BaseMagazine12_gauge
-  components:
-  - type: BallisticAmmoProvider
-    proto: ShellShotgun12_gaugeSlugAP
-  - type: Sprite
-    layers:
-    - state: slug-AP
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: Magazine12_gaugeFlechette
-  name: ammo drum (12 gauge flechette)
-  parent: BaseMagazine12_gauge
+  id: ShortMagazine12_gaugeFlechette
+  name: box magazine (12 gauge flechette)
+  parent: BaseShortMagazine12_gauge
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeFlechette
@@ -182,5 +137,5 @@
     layers:
     - state: flechette
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]

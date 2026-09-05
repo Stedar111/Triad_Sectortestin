@@ -1,0 +1,42 @@
+- type: entity
+  id: Bullet18.5x76FMJ
+  name: bullet (18.5x76mm FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+        Structural: 60
+    armorPenetration: 0.30
+
+- type: entity
+  id: Bullet18.5x76AntiMateriel
+  name: Bullet (18.5x76 AntiMateriel)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Structural: 100
+    armorPenetration: 0.80
+
+- type: entity
+  id: Bullet18.5x76Fragmentation
+  name: Bullet (18.5x76 Fragmentation)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Heat: 10
+        Structural: 50
+    armorPenetration: 0.15
+  - type: ProjectileGrenade
+    fillPrototype: ShrapnelCluster
+    capacity: 6
+  - type: TriggerOnCollide
+    fixtureid: projectile
