@@ -66,7 +66,14 @@
     - suitStorage
   - type: AmmoCounter
   - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -3
+    maxAngle: -10
   - type: Gun
+    minAngle: 6
+    maxAngle: 20
+    angleIncrease: 5
+    angleDecay: 10
     fireRate: 2.2
     selectedMode: SemiAuto
     availableModes:
@@ -79,7 +86,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine18.5x76mm
+        startingItem: Magazine185x76mm
         priority: 2
         whitelist:
           tags:

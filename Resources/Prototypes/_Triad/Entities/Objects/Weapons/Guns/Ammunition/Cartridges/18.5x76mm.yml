@@ -1,8 +1,8 @@
 - type: entity
-  id: BaseCartridge18.5x76mm
+  id: BaseCartridge185x76mm
   name: cartridge (18.5x76mm)
   parent: BaseCartridge
-  description: A newer round to Triad, a strange hybrid round between a typical low-caliber grenade launcher, and an anti-materiel round.
+  description: A strange hybrid round between a typical low-caliber grenade launcher, and an anti-materiel round. Kicks like a mule and offers some exotic round types.
   abstract: true
   components:
   - type: Tag
@@ -22,21 +22,21 @@
     price: 1
 
 - type: entity
-  id: Cartridge18.5x76mm
+  id: Cartridge185x76mm
   name: cartridge (18.5x76mm FMJ)
-  parent: BaseCartridge18.5x76mm
+  parent: BaseCartridge185x76mm
   components:
   - type: CartridgeAmmo
-    proto: Bullet18.5x76mmFMJ
+    proto: Bullet185x76mmFMJ
 
 - type: entity
-  id: Cartridge18.5x76mmAnti-Materiel
-  name: cartridge (18.5x76mm Anti-Materiel)
-  parent: BaseCartridge18.5x76mm
+  id: Cartridge185x76mmAnti-Materiel
+  name: cartridge (18.5x76mm anti-materiel)
+  parent: BaseCartridge185x76mm
   description: With a hardened plastitanium core, not much can stand in the way of this without getting perforated.
   components:
   - type: CartridgeAmmo
-    proto: Bullet18.5x76mmAntiMateriel
+    proto: Bullet185x76mmAnti-Materiel
   - type: Sprite
     layers:
     - state: base
@@ -44,3 +44,35 @@
     - state: tip
       map: [ "enum.AmmoVisualLayers.Tip" ]
       color: "#0a0a0a"
+
+- type: entity
+  id: Cartridge185x76mmHighEx
+  name: cartridge (18.5x76mm high-explosive)
+  parent: BaseCartridge185x76mm
+  description: Try not to drop it.
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmHighex
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#ff0000"
+
+- type: entity
+  id: Cartridge185x76mmHighExInc
+  name: cartridge (18.5x76mm high-explosive incendiary)
+  parent: BaseCartridge185x76mm
+  description: Contains a powdered incendiary mix that melts into a sticky napalm like substance, burning and sticking to whatever poor soul you shoot this at.
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmHighExIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#fa6b00"

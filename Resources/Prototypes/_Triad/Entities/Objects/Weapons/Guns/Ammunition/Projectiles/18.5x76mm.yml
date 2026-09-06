@@ -1,5 +1,5 @@
 - type: entity
-  id: Bullet18.5x76mmFMJ
+  id: Bullet185x76mmFMJ
   name: bullet (18.5x76mm FMJ)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -12,8 +12,8 @@
     armorPenetration: 0.30
 
 - type: entity
-  id: Bullet18.5x76mmAntiMateriel
-  name: Bullet (18.5x76mm AntiMateriel)
+  id: Bullet185x76mmAnti-Materiel
+  name: Bullet (18.5x76mm anti-materiel)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -21,11 +21,11 @@
     damage:
       types:
         Piercing: 27
-        Structural: 100
+        Structural: 115
     armorPenetration: 0.80
 
 - type: entity
-  id: Bullet18.5x76mmFragmentation
+  id: Bullet185x76mmFragmentation
   name: Bullet (18.5x76mm Fragmentation)
   components:
   - type: Projectile
@@ -40,3 +40,50 @@
     capacity: 6
   - type: TriggerOnCollide
     fixtureid: projectile
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: Bullet185x76mmHighex
+  name: bullet (18.5x76mm high-explosive)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+        Heat: 10
+        Structural: 75
+    armorPenetration: 0.17
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 1.8
+    intensitySlope: 0.7
+    totalIntensity: 4
+    maxTileBreak: 0
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: Bullet185x76mmHighExIncendiary
+  name: bullet (18.5x76mm high-explosive incendiary)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Heat: 19
+        Structural: 30
+    armorPenetration: 0.10
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    maxIntensity: 1.8
+    intensitySlope: 0.7
+    totalIntensity: 4
+    maxTileBreak: 0
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: Tracer
+    color: "#D1B479FF"
+    length: 3

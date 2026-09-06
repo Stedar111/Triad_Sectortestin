@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseMagazine18.5x76mm
+  id: BaseMagazine185x76mm
   name: "magazine (18.5x76)"
   parent: BaseItem
   abstract: true
@@ -33,17 +33,59 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine18.5x76mmEmpty
+  id: Magazine185x76mmEmpty
   name: "magazine (18.5x76mm empty)"
-  parent: BaseMagazine18.5x76mm
+  parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
     proto: null
 
 - type: entity
-  id: Magazine18.5x76mm
+  id: Magazine185x76mm
   name: "magazine (18.5x76mm FMJ)"
-  parent: BaseMagazine18.5x76mm
+  parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge18.5x76mm
+    proto: Cartridge185x76mm
+
+- type: entity
+  id: Magazine185x76mmHighEx
+  name: "magazine (18.5x76 high-explosive)"
+  parent: BaseMagazine185x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge185x76mmHighEx
+  - type: Sprite
+    layers:
+    - state: highexplosive
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine185x76mmHighExIncendiary
+  name: "magazine (18.5x76 high-explosive incendiary)"
+  parent: BaseMagazine185x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge185x76mmHighExInc
+  - type: Sprite
+    layers:
+    - state: highexplosiveincendiary
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine185x76mmAnti-Materiel
+  name: "magazine (18.5x76 anti-materiel)"
+  parent: BaseMagazine185x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge185x76mmAnti-Materiel
+  - type: Sprite
+    layers:
+    - state: antimateriel
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
