@@ -1,0 +1,46 @@
+- type: entity
+  id: BaseCartridge18.5x76mm
+  name: cartridge (18.5x76mm)
+  parent: BaseCartridge
+  description: A newer round to Triad, a strange hybrid round between a typical low-caliber grenade launcher, and an anti-materiel round.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge185x76mm
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmFMJ
+  - type: Sprite
+    sprite: _Triad/Objects/Weapons/Guns/Ammunition/Casings/light_grenade_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge18.5x76mm
+  name: cartridge (18.5x76mm FMJ)
+  parent: BaseCartridge18.5x76mm
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet18.5x76mmFMJ
+
+- type: entity
+  id: Cartridge18.5x76mmAnti-Materiel
+  name: cartridge (18.5x76mm Anti-Materiel)
+  parent: BaseCartridge18.5x76mm
+  description: With a hardened plastitanium core, not much can stand in the way of this without getting perforated.
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet18.5x76mmAntiMateriel
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#0a0a0a"

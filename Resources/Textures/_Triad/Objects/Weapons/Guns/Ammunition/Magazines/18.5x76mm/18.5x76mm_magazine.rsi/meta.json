@@ -5,28 +5,28 @@
     "y": 32
   },
   "license": "CC-BY-SA-4.0",
-  "copyright": "Made by ddrakov (Discord)",
+  "copyright": "Made by ddrakov (Discord), modified by Dart111",
   "states": [
     {
       "name": "base"
     },
     {
-      "name": "beanbag"
+      "name": "antimateriel"
     },
     {
-      "name": "practice"
+      "name": "highexplosiveincendiary"
     },
     {
-      "name": "uranium"
+      "name": "highexplosive"
     },
     {
-      "name": "incendiary"
+      "name": "fragmentation"
     },
     {
-      "name": "flechette"
+      "name": "fragmentationincendiary"
     },
     {
-      "name": "slug"
+      "name": "emp"
     },
     {
       "name": "mag-1"

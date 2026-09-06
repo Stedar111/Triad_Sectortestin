@@ -29,6 +29,19 @@
 - type: Tag
   id: TriadHeavyWeapon
 
+# Cartridges
+
+- type: Tag
+  id: Cartridge185x76mm
+
+# Magazines
+
+- type: Tag
+  id: Magazine185x76mm
+
+- type: Tag
+  id: ShortMagazine12_gaugeBuckshot
+
 # Clothing
 - type: Tag
   id: AdvancedTacticalBackpack

@@ -1,0 +1,49 @@
+- type: entity
+  id: BaseMagazine18.5x76mm
+  name: "magazine (18.5x76)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Magazine185x76mm
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge185x76mm
+    proto: Cartridge185x76mm
+    capacity: 10
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Triad/Objects/Weapons/Guns/Ammunition/Magazines/18.5x76mm/18.5x76mm_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine18.5x76mmEmpty
+  name: "magazine (18.5x76mm empty)"
+  parent: BaseMagazine18.5x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+- type: entity
+  id: Magazine18.5x76mm
+  name: "magazine (18.5x76mm FMJ)"
+  parent: BaseMagazine18.5x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge18.5x76mm

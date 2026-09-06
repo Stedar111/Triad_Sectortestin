@@ -43,7 +43,7 @@
     price: 5000
 
 - type: entity
-  name: HZD Bombadier (12 gauge, 18.5x76) #Low Caliber grenade launcher that happens to also fire shotgun shells.
+  name: HZD Bombadier (12 gauge, 18.5x76mm) #Low Caliber grenade launcher that happens to also fire shotgun shells.
   parent: [BaseItem, BaseGunWieldable]
   id: WeaponShotgunHZDBombadier
   description: A strange, autoloading, multicaliber weapon system often found paired with the Besieger modsuit system, perfect for flushing pirates out of hard cover.  One of the more recent HZD export items, made in lower numbers due to the complexity of internal components, but its engineering and quality is top notch.
@@ -79,11 +79,12 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine12_gaugeBuckshot
+        startingItem: Magazine18.5x76mm
         priority: 2
         whitelist:
           tags:
-          - Magazine12_gaugeBuckshot
+          - ShortMagazine12_gaugeBuckshot
+          - Magazine185x76mm
         whitelistFailPopup: gun-magazine-whitelist-fail
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg

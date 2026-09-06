@@ -7,6 +7,7 @@
   - type: Tag
     tags:
     - Magazine12_gaugeBuckshot
+    - ShortMagazine12_gaugeBuckshot
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
