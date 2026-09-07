@@ -74,12 +74,13 @@
     maxAngle: 20
     angleIncrease: 5
     angleDecay: 10
+    projectileSpeed: 42
     fireRate: 2.2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      path: /Audio/_Triad/Weapons/Guns/Gunshots/gun_vulture_fire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -93,8 +94,8 @@
           - ShortMagazine12_gaugeBuckshot
           - Magazine185x76mm
         whitelistFailPopup: gun-magazine-whitelist-fail
-        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/chemrail_magin.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
