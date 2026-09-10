@@ -21,6 +21,7 @@ using Content.Shared.Interaction;
 using Content.Shared._Mono.ShipGuns;
 using Content.Shared.Examine;
 using Content.Server.Salvage.Expeditions;
+using Content.Server._Mono.NPC.HTN; // Triad
 
 namespace Content.Server._Mono.FireControl;
 
@@ -100,8 +101,14 @@ public sealed partial class FireControlSystem : EntitySystem
     [SubscribeLocalEvent]
     private void OnShotAttempted(EntityUid uid, FireControllableComponent component, ref ShotAttemptedEvent args)
     {
-        if (component.ControllingServer == null)
-            args.Cancel();
+        if (component.ControllingServer != null)
+            return;
+
+        // Drones can ignore having a gunnery server
+        if (HasComp<ShipTargetingComponent>(args.User))
+            return;
+
+        args.Cancel();
     }
     // End Triad
 

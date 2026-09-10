@@ -47,18 +47,18 @@
 - type: startingGear
   id: MobHumanoidMercenaryGearMeleeT2
   equipment:
-    gloves: ClothingHandsGlovesColorMercMachete
+    gloves: ClothingHandsGlovesFingerless
     head: ClothingHeadHelmetMercenaryBlack
     mask: ClothingMaskGas
     jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckBlueMercenary
     outerClothing: ClothingOuterArmorBasicSlim
     neck: ClothingNeckIFFNeutral
     belt: ClothingBeltMilitaryWebbing
-    pocket1: Machete
+    pocket1: SpaceCash1000
     pocket2: SpaceCash1000
     shoes: ClothingShoesBootsCombat
   inhand:
-    - NPCHandBlocker
+    - Machete
 
 - type: startingGear
   id: MobHumanoidMercenaryGearRangedT2
