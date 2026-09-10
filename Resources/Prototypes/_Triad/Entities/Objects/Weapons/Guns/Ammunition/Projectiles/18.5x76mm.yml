@@ -25,8 +25,10 @@
     armorPenetration: 0.80
 
 - type: entity
+  parent: BaseBulletTrigger
   id: Bullet185x76mmFragmentation
-  name: Bullet (18.5x76mm Fragmentation)
+  name: bullet (18.5x76mm fragmentation)
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -42,10 +44,27 @@
     fixtureid: projectile
 
 - type: entity
+  parent: [Bullet185x76mmFragmentation, BaseBulletIncendiary]
+  id: Bullet185x76mmFragmentationIncendiary
+  name: bullet (18.5x76mm fragmentation incendiary)
   categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Slash: 2
+        Heat: 10
+        Structural: 15
+    armorPenetration: 0.05
+  - type: ProjectileGrenade
+    fillPrototype: ShrapnelClusterIncendiary
+
+- type: entity
   parent: BaseBulletTrigger
-  id: Bullet185x76mmHighex
+  id: Bullet185x76mmHighEx
   name: bullet (18.5x76mm high-explosive)
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -63,10 +82,10 @@
     maxTileBreak: 0
 
 - type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseBulletTrigger
+  parent: [BaseBulletTrigger, BaseBulletIncendiary]
   id: Bullet185x76mmHighExIncendiary
   name: bullet (18.5x76mm high-explosive incendiary)
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:

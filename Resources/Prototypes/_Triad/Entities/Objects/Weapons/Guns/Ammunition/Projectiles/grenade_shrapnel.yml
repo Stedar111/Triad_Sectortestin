@@ -1,0 +1,37 @@
+- type: entity
+  parent: BaseBullet
+  id: ShrapnelCluster
+  name: fragment (shard, lethal)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Slash: 5
+  - type: TimedDespawn
+    lifetime: 0.1
+
+- type: entity
+  parent: BaseBulletIncendiary
+  id: ShrapnelClusterIncendiary
+  name: fragment (shard, incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot-flare
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Slash: 2
+        Heat: 3
+  - type: TimedDespawn
+    lifetime: 0.1
+  - type: IgniteOnCollide
+    firestacks: 1
+    count: 10

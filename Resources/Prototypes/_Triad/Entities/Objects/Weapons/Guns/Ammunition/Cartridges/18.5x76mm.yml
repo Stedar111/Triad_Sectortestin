@@ -46,13 +46,45 @@
       color: "#0a0a0a"
 
 - type: entity
+  id: Cartridge185x76mmFragmentation
+  name: cartridge (18.5x76mm fragmentation)
+  parent: BaseCartridge185x76mm
+  description: Contains fragments that shoot outward on contact.
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmFragmentation
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#63e618"
+
+- type: entity
+  id: Cartridge185x76mmFragmentationIncendiary
+  name: cartridge (18.5x76mm fragmentation incendiary)
+  parent: BaseCartridge185x76mm
+  description: Contains fragments that shoot outward on contact.
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmFragmentationIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#e8ff16"
+
+- type: entity
   id: Cartridge185x76mmHighEx
   name: cartridge (18.5x76mm high-explosive)
   parent: BaseCartridge185x76mm
   description: Try not to drop it.
   components:
   - type: CartridgeAmmo
-    proto: Bullet185x76mmHighex
+    proto: Bullet185x76mmHighEx
   - type: Sprite
     layers:
     - state: base

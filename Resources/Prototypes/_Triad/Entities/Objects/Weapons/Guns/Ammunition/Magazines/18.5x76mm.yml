@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMagazine185x76mm
-  name: "magazine (18.5x76)"
+  name: "box magazine (18.5x76)"
   parent: BaseItem
   abstract: true
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   id: Magazine185x76mmEmpty
-  name: "magazine (18.5x76mm empty)"
+  name: "box magazine (18.5x76mm empty)"
   parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
@@ -42,7 +42,7 @@
 
 - type: entity
   id: Magazine185x76mm
-  name: "magazine (18.5x76mm FMJ)"
+  name: "box magazine (18.5x76mm FMJ)"
   parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
@@ -50,7 +50,7 @@
 
 - type: entity
   id: Magazine185x76mmHighEx
-  name: "magazine (18.5x76 high-explosive)"
+  name: "box magazine (18.5x76 high-explosive)"
   parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
@@ -64,7 +64,7 @@
 
 - type: entity
   id: Magazine185x76mmHighExIncendiary
-  name: "magazine (18.5x76 high-explosive incendiary)"
+  name: "box magazine (18.5x76 high-explosive incendiary)"
   parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
@@ -77,8 +77,36 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+  id: Magazine185x76mmFragmentation
+  name: "box magazine (18.5x76 fragmentation)"
+  parent: BaseMagazine185x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge185x76mmFragmentation
+  - type: Sprite
+    layers:
+    - state: fragmentation
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: Magazine185x76mmFragmentationIncendiary
+  name: "box magazine (18.5x76 fragmentation incendiary)"
+  parent: BaseMagazine185x76mm
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge185x76mmFragmentationIncendiary
+  - type: Sprite
+    layers:
+    - state: fragmentationincendiary
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
   id: Magazine185x76mmAnti-Materiel
-  name: "magazine (18.5x76 anti-materiel)"
+  name: "box magazine (18.5x76 anti-materiel)"
   parent: BaseMagazine185x76mm
   components:
   - type: BallisticAmmoProvider
