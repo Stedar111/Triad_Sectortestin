@@ -59,6 +59,7 @@
     armorPenetration: 0.05
   - type: ProjectileGrenade
     fillPrototype: ShrapnelClusterIncendiary
+    capacity: 6
 
 - type: entity
   parent: BaseBulletTrigger
@@ -106,3 +107,24 @@
   - type: Tracer
     color: "#D1B479FF"
     length: 3
+
+- type: entity
+  parent: BaseBulletTrigger
+  id: Bullet185x76mmHighExRad
+  name: bullet (18.5x76mm high-explosive radiation)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Radiation: 11
+        Structural: 50
+    armorPenetration: 0.18
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Radioactive
+    maxIntensity: 1.8
+    intensitySlope: 0.7
+    totalIntensity: 4
+    maxTileBreak: 0

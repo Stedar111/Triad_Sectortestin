@@ -108,3 +108,19 @@
     - state: tip
       map: [ "enum.AmmoVisualLayers.Tip" ]
       color: "#fa6b00"
+
+- type: entity
+  id: Cartridge185x76mmHighExRad
+  name: cartridge (18.5x76mm high-explosive radiation)
+  parent: BaseCartridge185x76mm
+  description: A round packed full of high-explosives and fissile uranium, the hell is wrong with you?
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet185x76mmHighExRad
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#04ff00"
