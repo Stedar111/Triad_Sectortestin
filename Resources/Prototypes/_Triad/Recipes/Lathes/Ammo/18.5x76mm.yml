@@ -1,0 +1,111 @@
+#18.5 ammo costs are high to offset some of its all round and versatile ammo types, especially EMP rounds and Anti-Materiel
+#Magazines
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmFMJMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 1500
+    Steel: 500
+  result: Magazine185x76mm
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Steel: 500
+  result: Magazine185x76mmEmpty
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 500
+    Plasma: 1000
+    Steel: 500
+  result: Magazine185x76mmHighEx
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 500
+    Plasma: 500
+    Plastic: 500
+    Steel: 500
+  result: Magazine185x76mmHighExIncendiary
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 500
+    UraniumDepleted: 500
+    Plasma: 500
+    Steel: 500
+  result: Magazine185x76mmHighExRad
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 1000
+    Plasma: 500
+    Steel: 500
+  result: Magazine185x76mmFragmentation
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plasteel: 500
+    Plastic: 500
+    Plasma: 500
+    Steel: 500
+  result: Magazine185x76mmFragmentationIncendiary
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmfmjMagazineRecipe
+  categories:
+  - FMJAmmo
+  - Ammo
+  materials:
+    Plastitanium: 1000
+    UraniumDepleted: 500
+    Steel: 500
+  result: Magazine185x76mmAnti-Materiel
+
+- type: latherecipe
+  parent: BaseAmmoRecipe
+  id: 185x76mmEMPMagazineRecipe
+  categories:
+  - MiscAmmo
+  - Ammo
+  materials:
+    Plasteel: 500
+    Iridite: 200
+    Copper: 800
+    Steel: 500
+  result: Magazine185x76mmEMP
