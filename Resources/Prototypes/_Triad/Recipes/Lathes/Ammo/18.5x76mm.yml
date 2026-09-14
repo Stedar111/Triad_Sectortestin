@@ -1,5 +1,5 @@
-#18.5 ammo costs are high to offset some of its all round and versatile ammo types, especially EMP rounds and Anti-Materiel
-#Magazines
+#18.5 ammo costs are high to offset some of its all-round and versatile ammo types, especially EMP rounds and Anti-Materiel
+#Magazines [5 steel, 15 misc materials]
 
 - type: latherecipe
   parent: BaseAmmoRecipe
@@ -14,9 +14,8 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmEmptyMagazineRecipe
   categories:
-  - FMJAmmo
   - Ammo
   materials:
     Steel: 500
@@ -24,9 +23,9 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmHighExMagazineRecipe
   categories:
-  - FMJAmmo
+  - Misc
   - Ammo
   materials:
     Plasteel: 500
@@ -36,9 +35,9 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmHighExIncendiaryMagazineRecipe
   categories:
-  - FMJAmmo
+  - IncenAmmo
   - Ammo
   materials:
     Plasteel: 500
@@ -49,22 +48,22 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmHighExRadMagazineRecipe
   categories:
-  - FMJAmmo
+  - UraniumAmmo
   - Ammo
   materials:
     Plasteel: 500
-    UraniumDepleted: 500
+    UraniumFissile: 010
     Plasma: 500
     Steel: 500
   result: Magazine185x76mmHighExRad
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmFragmentationMagazineRecipe
   categories:
-  - FMJAmmo
+  - MiscAmmo
   - Ammo
   materials:
     Plasteel: 1000
@@ -74,9 +73,10 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmFragmentationIncendiaryMagazineRecipe
   categories:
-  - FMJAmmo
+  - MiscAmmo
+  - IncenAmmo
   - Ammo
   materials:
     Plasteel: 500
@@ -87,9 +87,9 @@
 
 - type: latherecipe
   parent: BaseAmmoRecipe
-  id: 185x76mmfmjMagazineRecipe
+  id: 185x76mmAnti-MaterielMagazineRecipe
   categories:
-  - FMJAmmo
+  - PlasteelApAmmo
   - Ammo
   materials:
     Plastitanium: 1000
@@ -109,3 +109,6 @@
     Copper: 800
     Steel: 500
   result: Magazine185x76mmEMP
+
+#Ammo Boxes [30 misc materials]
+
