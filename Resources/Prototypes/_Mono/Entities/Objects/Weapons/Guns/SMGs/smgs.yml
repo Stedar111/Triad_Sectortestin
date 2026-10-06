@@ -22,7 +22,7 @@
     angleIncrease: 5
     angleDecay: 20
     fireRate: 8
-    damageModifier: 0.9
+   # damageModifier: 0.9 Triad, Feels redundant
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mla_fire.ogg
   - type: ChamberMagazineAmmoProvider
@@ -241,10 +241,14 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -5
-    maxAngle: -5
+    maxAngle: -15 #Triad -5 -> -15, still want it usable
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/SMGs/NTSF-HCLM-45rsi
   - type: Gun
+    minAngle: 10 #Triad, one-handing this thing accurately was a bit too much.
+    maxAngle: 30
+    angleIncrease: 7
+    angleDecay: 10
     fireRate: 6
     selectedMode: FullAuto
     soundGunshot:
