@@ -122,10 +122,10 @@
   - type: StaticPrice # Mono - 200 from frontier 1k
     price: 200
   - type: Gun # Mono change - Sound for viper. Triad, making it into a point blank monster for mag dumping people in your personal space.
-    minAngle: 6
+    minAngle: 2
     maxAngle: 25
     angleIncrease: 4
-    angleDecay: 6
+    angleDecay: 10
     fireRate: 9
     selectedMode: SemiAuto
     availableModes:
