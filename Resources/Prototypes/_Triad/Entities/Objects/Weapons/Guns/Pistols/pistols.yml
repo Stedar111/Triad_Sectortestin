@@ -210,8 +210,8 @@
     netsync: false
   - type: HandheldLight
     addPrefix: false
-      blinkingBehaviourId: blinking
-      radiatingBehaviourId: radiating
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour
@@ -228,6 +228,5 @@
         minValue: 0.1
         maxValue: 2.0
         isLooped: true
-  - type: ItemTogglePointLight
   - type: PowerCellSlot
     cellSlotId: cell_slot
