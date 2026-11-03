@@ -151,6 +151,7 @@
     sprite: _Triad/Objects/Weapons/Guns/SMGs/dagger_inhands_32x.rsi
   - type: ItemToggle
     altPriority: 1
+    visuals: EnabledAlternate # So that it doesn't clash with the light's toggle
     soundActivate:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
       params:
@@ -195,7 +196,7 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleableVisuals.Enabled:
+      enum.ToggleableVisuals.EnabledAlternate:
         enum.ToggleableVisuals.Layer:
           True: { state: stock }
           False: { state: stock-folded }
